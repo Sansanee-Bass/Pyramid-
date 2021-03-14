@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Editing {{item.name}} </title>
+<link rel="stylesheet" href="/static/style.css"/>
+
+</head>
+<body> 
+    <form  method="POST">
+    
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="{{item.name}}">
+        <label for="total">Total:</label>
+        <input type="text" name="total" value="{{item.total}}">
+        <label for="link">Link:</label>
+        <input type="text" name="link" value="{{item.link}}">
+        <input type="submit">
+    </form>
+
+<h1 > {{greeting}} , {{name}} </h1>
+<img class="ed" src="/static/store.jpg" alt="image" style="width:560px"/>
+</body>
+</html>

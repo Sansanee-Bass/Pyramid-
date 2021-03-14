@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> {{greeting}}, {{name}} </title>
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body> 
+<h1 > {{greeting}} , {{name}} </h1>
+<img class="s1" src="/static/store2.jpg" alt="image" style="width:1000px"/>
+<div> Our Current Stock </div>
+<table>
+{% for item in inv %}
+    <tr class="tb">
+        {# <td> {{item.id}} </td> #}
+        <td> <a href="{{item.link}}">{{item.name}}</a> </td>
+        <td> <a href="edit/{{item.id}}">{{item.total}}</a> </td>
+    </tr>
+{% endfor %}
+</table>
+
+
+</body>
+</html>
